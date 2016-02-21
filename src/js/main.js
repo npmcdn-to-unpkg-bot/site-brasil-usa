@@ -8,5 +8,7 @@ require('bootstrap');
 (function ($) {
   'use strict';
 
-  $('html').addClass('js');
+  $('.js-toggle-form').on('change', function() {
+    $('.js-togglable-form').toggleClass('sr-only');
+  });
 } (jQuery));
