@@ -2,6 +2,7 @@
 
 require('./track-js-errors')();
 
+window.Tether = require('tether');
 require('bootstrap');
 
 (function ($) {
