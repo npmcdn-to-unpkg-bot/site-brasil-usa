@@ -1,0 +1,6 @@
+.img-responsive,
+.embed-responsive {
+  & + p {
+    margin-top: 1em;
+  }
+}

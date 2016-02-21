@@ -1,3 +1,9 @@
 .c-main-header {
 
 }
+
+@include media-breakpoint-down(xs) {
+  .navbar > .container {
+    padding: 0;
+  }
+}
