@@ -9,7 +9,7 @@ gulp.task('serve', ['build'], function() {
     // proxy: "http://localhost:8000"
     // or use builtin server:
     server: './dist',
-    files: ['src/*.html']
+    files: ['src/*.html', 'src/include/*.html']
   });
 
   gulp.watch(['src/*.html', 'src/include/*.html'], ['html']);
