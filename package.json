@@ -4,6 +4,9 @@
   "scripts": {
     "start": "gulp"
   },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.2"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "browser-sync": "^2.11.1",

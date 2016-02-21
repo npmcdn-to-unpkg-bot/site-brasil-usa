@@ -2,6 +2,8 @@
 
 require('./track-js-errors')();
 
+require('bootstrap');
+
 (function ($) {
   'use strict';
 
