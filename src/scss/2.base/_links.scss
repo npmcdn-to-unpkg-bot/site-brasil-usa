@@ -1,0 +1,17 @@
+a {
+  color: $link-color;
+  transition: all .2s ease-out;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+  }
+
+  &:active {
+
+  }
+
+  &:visited {
+
+  }
+}
