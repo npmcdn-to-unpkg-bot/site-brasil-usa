@@ -12,7 +12,7 @@ gulp.task('serve', ['build'], function() {
     files: ['src/*.html']
   });
 
-  gulp.watch(['src/*.html'], ['html']);
+  gulp.watch(['src/*.html', 'src/include/*.html'], ['html']);
   gulp.watch(['src/img/**/*'], ['images']);
   gulp.watch(['src/scss/**/*.scss'], ['css']);
   gulp.watch(['src/js/**/*.js'], ['javascript']);
