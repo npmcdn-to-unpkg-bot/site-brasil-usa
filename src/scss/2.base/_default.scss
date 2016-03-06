@@ -16,9 +16,20 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: $font-family-base;
+  font-family: sans-serif;
   color: $text-color;
   -webkit-font-smoothing: antialiased;
+}
+
+.wf-active {
+  &,
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: $font-family-base;
+  }
 }
 
 audio,
