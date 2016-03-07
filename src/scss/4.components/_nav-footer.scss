@@ -1,0 +1,22 @@
+.c-secondary-nav {
+  list-style: none;
+
+  &__item {
+    @media (min-width: 48em) {
+      display: inline-block;
+    }
+  }
+
+  &__link {
+    @include font-size(14px);
+    color: #666;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      @include triangle(5px, right);
+    }
+  }
+}

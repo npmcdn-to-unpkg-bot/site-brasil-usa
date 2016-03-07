@@ -33,6 +33,23 @@
   font-size: $rem / ($rem * 0 + 1) + rem;
 }
 
+@mixin triangle($size, $direction, $color: currentColor) {
+  border: $size solid transparent;
+
+  @if ($direction == "up") {
+    border-bottom-color: $color;
+  }
+  @else if ($direction == "right") {
+    border-left-color: $color;
+  }
+  @else if ($direction == "down") {
+    border-top-color: $color;
+  }
+  @else if ($direction == "left") {
+    border-right-color: $color;
+  }
+}
+
 /*
  * Image replacement (does not work on buttons/inputs)
  */
