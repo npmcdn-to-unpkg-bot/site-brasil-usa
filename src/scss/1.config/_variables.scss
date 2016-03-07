@@ -1,10 +1,11 @@
 // Colors
-$brand-primary:    #252128;
+$brand-primary:    #0096CA;
+$brand-dark:    #0077A0;
 
 // Objects
-$text-color:       #222;
+$text-color:       #333;
 $link-color:       $brand-primary;
-$link-hover-color: darken($link-color, 10%);
+$link-hover-color: $brand-dark;
 
 $selection-bg-color: $link-color;
 $selection-text-color: $text-color;
@@ -14,3 +15,5 @@ $btn-color-primary: #fff;
 // Typography
 $font-family-base: Lato, sans-serif;
 $font-family-titles: Panton, sans-serif;
+
+$gutter: 2em;

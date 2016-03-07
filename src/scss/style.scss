@@ -1,5 +1,6 @@
 @import "1.config/variables";
 @import "1.config/mixins";
+@import "1.config/animations";
 
 
 // Base styles are inherited, so they shouldn't use classes.
@@ -28,6 +29,8 @@
 // In case of page-based components, they can be organized in subfolders.
 @import "4.components/goto-content";
 @import "4.components/header";
+@import "4.components/logo";
+@import "4.components/hamburger";
 @import "4.components/nav";
 @import "4.components/footer";
 

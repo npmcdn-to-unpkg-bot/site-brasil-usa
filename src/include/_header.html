@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- <meta name="theme-color" content="{{brand-color}}"> -->
+    <meta name="theme-color" content="#0096CA">
 
     <script>
        WebFontConfig = {
@@ -21,37 +21,37 @@
     <script async defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
 </head>
 <body>
-  <a href="#main-content" class="c-goto-content">Ir para o conteúdo principal</a>
+  <a href="#main-content" class="o-btn o-btn--primary c-goto-content">Ir para o conteúdo principal</a>
 
-    <nav class="navbar navbar-light bg-faded">
-        <div class="container">
-            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
-                &#9776;
-            </button>
+  <header class="c-main-header">
+    <a href="/" class="c-logo">
+      <img src="img/logo.png" alt="">
+    </a>
 
-            <a class="navbar-brand" href="/">
-              <img src="img/logo.jpg" alt="">
-              <!-- Brasil USA -->
-            </a>
+    <nav class="c-main-nav">
+      <button class="hamburger hamburger--spin c-main-nav__btn" type="button" id="open-menu">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
 
-            <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Como funciona</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/depoimentos.html">Depoimentos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/duvidas-frequentes.html">Dúvidas frequentes (FAQ)</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/login.html">Login / Cadastro</a>
-                        <!-- Acompanhe seu pedido -->
-                    </li>
-                </ul>
-
-                <a href="/pedido.html" class="btn btn-primary-outline pull-right">Faça seu pedido</a>
-            </div>
-        </div>
+      <ul class="c-main-nav__list">
+        <li class="c-main-nav__item">
+          <a class="c-main-nav__link is-active" href="/">Como funciona</a>
+        </li>
+        <li class="c-main-nav__item">
+          <a class="c-main-nav__link" href="/depoimentos.html">Depoimentos</a>
+        </li>
+        <li class="c-main-nav__item">
+          <a class="c-main-nav__link" href="/duvidas-frequentes.html">Dúvidas frequentes</a>
+        </li>
+        <li class="c-main-nav__item">
+          <a class="c-main-nav__link" href="/login.html">Login</a>
+            <!-- Texto muda para 'Meu histórico' se o usuário estiver logado -->
+        </li>
+        <li class="c-main-nav__item c-main-nav__item--featured">
+          <a href="/pedido.html" class="o-btn o-btn--primary">Faça seu pedido</a>
+        </li>
+      </ul>
     </nav>
+  </header>

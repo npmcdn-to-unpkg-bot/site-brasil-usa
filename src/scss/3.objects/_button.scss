@@ -1,3 +1,9 @@
+.o-btn,
+a.o-btn,
+button.o-btn {
+  font-family: $font-family-titles;
+}
+
 .o-btn {
   display: inline-block;
   vertical-align: middle;
@@ -6,7 +12,10 @@
   margin: 0;
   transition: all .2s ease-out;
   border: none;
-  padding: .25em .75em;
+  line-height: 1;
+  padding: 1em 1.5em;
+  border-radius: 3px;
+  transform: translateY(-4px);
 
   &,
   &:hover,
@@ -15,12 +24,20 @@
     text-decoration: none;
   }
 
+  &:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
   &--primary {
     background-color: $brand-primary;
-    color: $btn-color-primary;
-  }
-}
+    box-shadow: 0 4px 0 $brand-dark;
 
-.btn--cta {
-  max-width: 18em;
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      color: $btn-color-primary;
+    }
+  }
 }

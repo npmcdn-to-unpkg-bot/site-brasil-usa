@@ -1,0 +1,8 @@
+.c-logo {
+  display: block;
+  float: left;
+
+  @media (max-width: 64.99em) {
+    max-width: 180px;
+  }
+}
