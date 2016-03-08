@@ -8,5 +8,23 @@
   .o-col {
     display: table-cell;
     vertical-align: top;
+
+    .o-row--centered & {
+      vertical-align: middle;
+    }
+  }
+
+
+  .o-row__padder {
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+
+    .o-row {
+      border-spacing: $gutter 0;
+    }
+  }
+
+  .o-col--5 {
+    width: 41.66%;
   }
 }

@@ -1,4 +1,21 @@
 @include font-face('Panton', '../fonts/panton-blackcaps-webfont', 700);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-titles;
+}
+
 .o-h1 {
   @include font-size(42px);
+}
+
+.o-headline {
+  display: block;
+  font-family: $font-family-titles;
+  @include font-size(32px);
+  margin: 0 0 1em;
 }

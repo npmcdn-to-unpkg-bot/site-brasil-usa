@@ -1,0 +1,15 @@
+.c-section {
+  padding: 4.5em $gutter;
+
+  &--fixed {
+    // TODO set max width and margin: auto
+  }
+}
+
+.c-section--cta {
+  text-align: center;
+  max-width: 630px;
+  margin: auto;
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
