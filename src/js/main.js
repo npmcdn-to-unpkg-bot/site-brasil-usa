@@ -39,7 +39,12 @@ $menuBtn.addEventListener('click', function toggleMenu() {
 });
 
 
+var Flickity = require('flickity');
 
   $('.js-toggle-form').on('change', function() {
     $('.js-togglable-form').toggleClass('sr-only');
+document.addEventListener('DOMContentLoaded', function() {
+  new Flickity('.js-slider', {
+    cellAlign: 'left'
   });
+});
