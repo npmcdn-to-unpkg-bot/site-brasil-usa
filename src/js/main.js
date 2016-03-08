@@ -45,6 +45,7 @@ var Flickity = require('flickity');
     $('.js-togglable-form').toggleClass('sr-only');
 document.addEventListener('DOMContentLoaded', function() {
   new Flickity('.js-slider', {
-    cellAlign: 'left'
+    cellAlign: 'left',
+    pageDots: false
   });
 });
