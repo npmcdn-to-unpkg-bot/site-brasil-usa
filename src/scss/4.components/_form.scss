@@ -1,0 +1,13 @@
+.c-form {
+  &--inline {
+    display: inline-block;
+
+    .o-input {
+      min-width: 15em;
+    }
+
+    .o-btn {
+      margin-left: .75em;
+    }
+  }
+}

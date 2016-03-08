@@ -1,0 +1,17 @@
+.c-social-list {
+  margin: 0;
+
+  @media (max-width: 47.99em) {
+    text-align: center;
+  }
+
+  @media (min-width: 48em) {
+    float: right;
+  }
+
+  &__item {
+    & + & {
+      margin-left: 2em;
+    }
+  }
+}

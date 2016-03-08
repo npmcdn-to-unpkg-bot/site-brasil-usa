@@ -40,4 +40,12 @@ button.o-btn {
       color: $btn-color-primary;
     }
   }
+
+  &--sm {
+    padding: .75em 1.25em;
+  }
+
+  &--lg {
+    @include font-size(24px);
+  }
 }
