@@ -1,52 +1,42 @@
 <!--=include include/_header.html -->
 
-<main class="container">
-  <h1 class="display-1">Trabalhe Conosco</h1>
+<main>
+  <h1 class="o-title">Trabalhe Conosco</h1>
+  <div class="c-main-content">
+    <p class="o-headline">Envie seu currículo pra gente.<br/>
+      Adoramos pessoas motivadas.</p>
 
-  <div class="row">
-    <div class="col-md-6">
-      <p class="lead">Envie seu currículo pra gente. Adoramos pessoas motivadas.</p>
-
-      <form action="">
-        <div class="row">
-          <div class="col-md-6">
-            <fieldset class="form-group">
-              <label for="">Nome</label>
-              <input type="text" class="form-control">
-            </fieldset>
+    <form action="" class="c-work-form">
+      <div class="o-row__padder">
+        <div class="o-row o-row--padded">
+          <div class="o-col">
+            <label class="o-label" for="">Nome</label>
+            <input type="text" name="name" class="o-input o-input--full">
           </div>
-          <div class="col-md-6">
-            <fieldset class="form-group">
-              <label for="">Email</label>
-              <input type="email" class="form-control">
-            </fieldset>
+          <div class="o-col">
+            <label class="o-label" for="">Email</label>
+            <input type="email" name="email" class="o-input o-input--full">
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <fieldset class="form-group">
-              <label for="">Telefone</label>
-              <input type="text" class="form-control">
-            </fieldset>
+        <div class="o-row o-row--padded">
+          <div class="o-col">
+            <label class="o-label" for="">Telefone</label>
+            <input type="text" name="phone" class="o-input o-input--full">
           </div>
-          <div class="col-md-6">
-            <fieldset class="form-group">
-              <label for="exampleInputFile">Currículo</label>
-              <input type="file" class="form-control-file" id="exampleInputFile">
-              <small class="text-muted">Envie arquivos em formato .PDF de até 2MB.</small>
-            </fieldset>
+          <div class="o-col">
+            <label class="o-label" for="exampleInputFile">Currículo</label>
+            <input type="file" class="o-input o-input--full" id="exampleInputFile">
+            <small class="text-muted">Envie arquivos em formato .PDF de até 2MB.</small>
           </div>
         </div>
+      </div>
 
-        <fieldset class="form-group">
-          <label for="exampleTextarea">Mensagem</label>
-          <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-        </fieldset>
+      <label class="o-label" for="exampleTextarea">Mensagem</label>
+      <textarea class="o-input o-input--full" id="exampleTextarea" rows="3"></textarea>
 
-        <button class="btn btn-primary pull-right" type="submit">Enviar</button>
-      </form>
-
-    </div>
+      <button class="o-btn o-btn--primary" type="submit">Enviar</button>
+    </form>
+  </div>
 </main>
 
 
