@@ -13,6 +13,16 @@ h6 {
   @include font-size(42px);
 }
 
+.o-h2 {
+  @include font-size(40px);
+  text-align: center;
+  margin-top: 0;
+
+  section + & {
+    margin-top: 2em;
+  }
+}
+
 .o-headline {
   display: block;
   font-family: $font-family-titles;
