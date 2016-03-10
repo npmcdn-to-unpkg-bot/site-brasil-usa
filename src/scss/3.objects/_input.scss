@@ -15,3 +15,10 @@
 select.o-input {
 
 }
+
+.o-input[type="file"] {
+  height: auto;
+  line-height: 1;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}

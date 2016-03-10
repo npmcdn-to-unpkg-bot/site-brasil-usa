@@ -1,6 +1,7 @@
 .c-icon {
   fill: $brand-primary;
   transition: all .2s ease-out;
+  max-height: 40px; // fuck IE
 
   &:hover {
     fill: $brand-dark;
