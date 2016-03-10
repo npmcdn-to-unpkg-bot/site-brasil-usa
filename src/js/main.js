@@ -1,9 +1,15 @@
 /*eslint-disable no-console */
+/* global Flickity */
 
 'use strict';
 
-require('./track-js-errors')();
+// $('.js-toggle-form').on('change', function() {
+//   $('.js-togglable-form').toggleClass('sr-only');
+// });
 
+/******************************************************************************/
+/* MINI JQUERY */
+/******************************************************************************/
 var $ = function(selector) {
     var selectorType = 'querySelectorAll';
 
@@ -31,18 +37,19 @@ function toggleClass(el, className) {
   }
 }
 
-var $menuBtn = $('#open-menu');
 
-$menuBtn.addEventListener('click', function toggleMenu() {
+/******************************************************************************/
+/* MENU */
+/******************************************************************************/
+$('#open-menu').addEventListener('click', function toggleMenu() {
   toggleClass(this, 'is-active');
   toggleClass(document.documentElement, 'is-menu-open');
 });
 
 
-var Flickity = require('flickity');
-
-  $('.js-toggle-form').on('change', function() {
-    $('.js-togglable-form').toggleClass('sr-only');
+/******************************************************************************/
+/* HOME SLIDER */
+/******************************************************************************/
 document.addEventListener('DOMContentLoaded', function() {
   new Flickity('.js-slider', {
     cellAlign: 'left',
