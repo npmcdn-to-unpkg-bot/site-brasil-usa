@@ -3,6 +3,8 @@
 
 'use strict';
 
+(function() {
+
 // $('.js-toggle-form').on('change', function() {
 //   $('.js-togglable-form').toggleClass('sr-only');
 // });
@@ -61,3 +63,5 @@ document.addEventListener('DOMContentLoaded', function() {
     pageDots: false
   });
 });
+
+})();
