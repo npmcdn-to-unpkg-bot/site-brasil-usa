@@ -1,4 +1,9 @@
 .c-form {
+  .o-label,
+  .o-btn {
+    margin-top: 1.5em;
+  }
+
   &--inline {
     display: inline-block;
 
@@ -7,6 +12,7 @@
     }
 
     .o-btn {
+      margin-top: 0;
       margin-left: .75em;
     }
   }

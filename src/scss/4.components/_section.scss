@@ -12,4 +12,9 @@
   margin: auto;
   padding-left: $gutter;
   padding-right: $gutter;
+
+  .o-headline {
+    @include font-size(32px);
+    margin-bottom: 1em;
+  }
 }

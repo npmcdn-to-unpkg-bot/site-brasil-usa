@@ -48,4 +48,8 @@ button.o-btn {
   &--lg {
     @include font-size(24px);
   }
+
+  &--full {
+    width: 100%;
+  }
 }

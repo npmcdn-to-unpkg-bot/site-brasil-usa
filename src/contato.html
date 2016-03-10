@@ -1,51 +1,50 @@
 <!--=include include/_header.html -->
 
-<main class="container">
-  <h1 class="display-1">Contato</h1>
-
-  <div class="row">
-    <div class="col-md-5">
-      <p class="lead">Dúvida? Reclamação? Sugestão? Elogio? Mande para nós através
+<main id="main-content">
+  <h1 class="o-title">Contato</h1>
+      <p class="o-headline u-text-center">Dúvida? Reclamação? Sugestão? Elogio?<br/> Mande para nós através
   do formulário abaixo.</p>
 
-      <form action="">
-            <fieldset class="form-group">
-              <label for="">Nome</label>
-              <input type="text" class="form-control">
-            </fieldset>
+      <form action="" class="c-form c-contact-form">
+        <label class="o-label" for="">Nome</label>
+        <input type="text" class="o-input o-input--full">
 
-            <fieldset class="form-group">
-              <label for="">Email</label>
-              <input type="email" class="form-control">
-            </fieldset>
+        <label class="o-label" for="">Email</label>
+        <input type="email" class="o-input o-input--full">
 
-            <fieldset class="form-group">
-              <label for="">Telefone</label>
-              <input type="text" class="form-control">
-            </fieldset>
+        <label class="o-label" for="">Telefone</label>
+        <input type="text" class="o-input o-input--full">
 
-            <fieldset class="form-group">
-              <label for="exampleTextarea">Mensagem</label>
-              <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-            </fieldset>
+        <label class="o-label" for="exampleTextarea">Mensagem</label>
+        <textarea class="o-input o-input--full"
+         id="exampleTextarea" rows="3"></textarea>
 
-        <button class="btn btn-primary pull-right" type="submit">Enviar</button>
+        <button class="o-btn o-btn--primary o-btn--full" type="submit">Enviar</button>
       </form>
-
-    </div>
-
-    <div class="col-md-6">
-      <h2>Localização</h2>
-      <p class="address">Rua Nomedetal, 29102<br/>
-      Bairro Neighborhood x, Cidade City / UK</p>
-
-      <div class="embed-responsive embed-responsive-16by9">
-        <div class="embed-responsive-item" id="map-canvas"></div>
-      </div>
-    </div>
 </main>
 
-<script src="http://maps.google.com/maps/api/js"></script>
+<aside class="c-contact-info">
+  <div class="o-row o-row--centered c-contact-info__content">
+    <div class="o-col o-col--3">
+      <h2>Localização</h2>
+      <p class="address">Rua Nomedetal, 29102<br/>
+      Bairro Neighborhood x<br>
+      Cidade City / UK</p>
+
+      <a href="#">contato@portalbrasilusa.com.br</a>
+
+      <h2>Fone</h2>
+      <p>+55 9999-9999</p>
+    </div>
+    <div class="o-col">
+      <div class="o-embed c-contact-info__map">
+        <div class="o-embed__child" id="map-canvas"></div>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyBHXpkRrZX6bXR_Kn1Lwx9F1heImNJe-yA"></script>
 <script>
   (function() {
     var address = 'Rua Pasteur, 629, Porto Alegre, RS';

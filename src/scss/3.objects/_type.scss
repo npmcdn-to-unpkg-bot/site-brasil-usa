@@ -9,6 +9,14 @@ h6 {
   font-family: $font-family-titles;
 }
 
+.o-title {
+  @include font-size(60px);
+  line-height: 1;
+  color: $white;
+  background: $brand-primary url(../img/pattern.png);
+  padding: 1.5em 30px .5em;
+}
+
 .o-h1 {
   @include font-size(42px);
 }
@@ -26,6 +34,7 @@ h6 {
 .o-headline {
   display: block;
   font-family: $font-family-titles;
-  @include font-size(32px);
-  margin: 0 0 1em;
+  @include font-size(24px);
+  line-height: 1.2;
+  margin: 0 0 1.5em;
 }

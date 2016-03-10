@@ -20,6 +20,7 @@
 @import "3.objects/grid";
 @import "3.objects/button";
 @import "3.objects/type";
+@import "3.objects/label";
 @import "3.objects/input";
 @import "3.objects/embed";
 @import "3.objects/content-block";
@@ -46,6 +47,9 @@
 @import "4.components/type/text-outro";
 
 @import "4.components/index/steps";
+
+@import "4.components/contact/form";
+@import "4.components/contact/info";
 
 
 // Trump partials should be used to override most previous styles.

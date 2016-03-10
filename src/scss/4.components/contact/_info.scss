@@ -1,0 +1,22 @@
+.c-contact-info {
+  background: $brand-primary;
+  color: $white;
+  margin-bottom: 5.5em;
+
+  a {
+    font-weight: bold;
+    color: $white;
+  }
+
+  &__content {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 60em) {
+  .c-contact-info__map {
+    margin: -2em 0;
+    box-shadow: 0 2px 3px rgba(0,0,0, .15);
+  }
+}
