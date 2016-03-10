@@ -1,0 +1,25 @@
+.c-review {
+  &__title {
+    margin: 0;
+    font-family: $font-family-base;
+    @include font-size(24px);
+  }
+
+  &__author {
+    margin-bottom: 0;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 170px;
+      border-top: 1px solid $brand-primary;
+      padding-top: 1em;
+    }
+  }
+}
+
+.c-review-list {
+  .o-row + .o-row {
+    margin-top: 3em;
+  }
+}
