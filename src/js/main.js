@@ -51,6 +51,11 @@ $('#open-menu').addEventListener('click', function toggleMenu() {
 /* HOME SLIDER */
 /******************************************************************************/
 document.addEventListener('DOMContentLoaded', function() {
+
+  if (!$('.js-slider').length) {
+    return;
+  }
+
   new Flickity('.js-slider', {
     cellAlign: 'left',
     pageDots: false
