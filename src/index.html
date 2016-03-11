@@ -1,7 +1,11 @@
 <!--=include include/_header.html -->
 
 <main id="main-content">
-  <section class="c-slider js-slider">
+  <section class="c-slider js-flickity" data-flickity-options='{
+    "cellAlign": "left",
+    "pageDots": false,
+    "imagesLoaded": true
+  }'>
     <div class="c-slider__slide">
       <img src="img/index/banner-product.jpg" alt="" class="c-slider__image">
       <div class="c-slider__content">
@@ -121,5 +125,7 @@
     <a href="/pedido.html" class="o-btn o-btn--primary o-btn--lg">Faça seu pedido</a>
   </section>
 </main>
+
+<script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.min.js"></script>
 
 <!--=include include/_footer.html -->

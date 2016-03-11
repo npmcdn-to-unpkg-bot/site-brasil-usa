@@ -15,7 +15,6 @@ gulp.task('eslint', function() {
 
 gulp.task('javascript', ['eslint'], function() {
   return gulp.src([
-      './node_modules/flickity/dist/flickity.pkgd.js',
       './src/js/main.js'
     ])
     .pipe(concat('bundle.js'))

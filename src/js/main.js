@@ -1,5 +1,4 @@
 /*eslint-disable no-console */
-/* global Flickity */
 
 'use strict';
 
@@ -50,21 +49,6 @@ $('#open-menu').addEventListener('click', function toggleMenu() {
   toggleClass(document.documentElement, 'is-menu-open');
 });
 
-
-/******************************************************************************/
-/* HOME SLIDER */
-/******************************************************************************/
-document.addEventListener('DOMContentLoaded', function() {
-
-  if (!$('.js-slider').length) {
-    return;
-  }
-
-  new Flickity('.js-slider', {
-    cellAlign: 'left',
-    pageDots: false
-  });
-});
 
 /******************************************************************************/
 /* FAQ */
