@@ -5,6 +5,8 @@
 
 (function() {
 
+document.documentElement.className += ' js';
+
 // $('.js-toggle-form').on('change', function() {
 //   $('.js-togglable-form').toggleClass('sr-only');
 // });
@@ -63,5 +65,16 @@ document.addEventListener('DOMContentLoaded', function() {
     pageDots: false
   });
 });
+
+/******************************************************************************/
+/* FAQ */
+/******************************************************************************/
+var $questions = $('.js-question-open');
+
+for (var i = 0; i < $questions.length; i++) {
+  $questions[i].addEventListener('click', function toggleMenu() {
+    toggleClass(this, 'is-open');
+  });
+}
 
 })();
