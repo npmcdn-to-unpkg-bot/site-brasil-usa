@@ -16,4 +16,19 @@
       margin-left: .75em;
     }
   }
+
+  &__hint {
+    @include font-size(13px);
+    color: #999;
+    margin: 0;
+  }
+
+
+  @media (min-width: 48em) {
+    .o-row:first-child {
+      .o-label {
+        margin-top: 0;
+      }
+    }
+  }
 }
