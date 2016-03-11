@@ -9,11 +9,20 @@
 
     .o-input {
       min-width: 15em;
+
+      @media (max-width: 47.99em) {
+        width: 100%;
+      }
     }
 
     .o-btn {
-      margin-top: 0;
-      margin-left: .75em;
+      float: right;
+
+      @media (min-width: 48em) {
+        float: none;
+        margin-top: 0;
+        margin-left: .75em;
+      }
     }
   }
 

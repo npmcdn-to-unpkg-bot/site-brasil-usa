@@ -2,12 +2,12 @@
   list-style: none;
   margin: 0;
 
-  @media (min-width: 48em) {
+  @media (min-width: 42em) {
     float: left;
   }
 
   &__item {
-    @media (min-width: 48em) {
+    @media (min-width: 32em) {
       display: inline-block;
 
       & + & {
