@@ -10,12 +10,16 @@ h6 {
 }
 
 .o-title {
-  @include font-size(60px);
+  @include font-size(32px);
   line-height: 1;
   color: $white;
   background: $brand-primary url(../img/pattern.png);
   padding: 1.5em 30px .5em;
   margin-top: 0;
+
+  @media (min-width: 48em) {
+    @include font-size(60px);
+  }
 }
 
 .o-h1 {
