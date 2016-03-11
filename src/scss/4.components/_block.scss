@@ -1,0 +1,15 @@
+.c-block {
+  border: 1px solid $brand-primary;
+  text-align: center;
+  padding: 3em 1.5em;
+
+  &__title {
+    @include font-size(24px);
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+  &__text {
+    margin-bottom: 2em;
+  }
+}
