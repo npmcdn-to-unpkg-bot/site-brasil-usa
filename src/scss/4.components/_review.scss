@@ -1,4 +1,16 @@
 .c-review {
+  padding-top: 3em;
+
+  &--1 {
+    padding-top: 0;
+  }
+
+  &--2 {
+    @media (min-width: 48em) {
+      padding-top: 0;
+    }
+  }
+
   &__title {
     margin: 0;
     font-family: $font-family-base;
@@ -15,11 +27,5 @@
       border-top: 1px solid $brand-primary;
       padding-top: 1em;
     }
-  }
-}
-
-.c-review-list {
-  .o-row + .o-row {
-    margin-top: 3em;
   }
 }
