@@ -1,5 +1,10 @@
 .c-main-header {
-  padding: 1.5em $gutter;
+  padding: 1.5em $gutter/2;
   max-width: 1240px;
   margin: auto;
+
+  @media (min-width: 35em) {
+    padding-left: $gutter;
+    padding-right: $gutter;
+  }
 }

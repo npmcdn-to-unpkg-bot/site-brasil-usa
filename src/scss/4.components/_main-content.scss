@@ -1,8 +1,13 @@
 .c-main-content {
-  padding: 0 $gutter;
+  padding: 0 $gutter/2;
 
   &--fixed {
     margin: auto;
     max-width: 1280px;
+  }
+
+  @media (min-width: 35em) {
+    padding-left: $gutter;
+    padding-right: $gutter;
   }
 }

@@ -8,14 +8,14 @@
   &__upper {
     background: #ebebeb;
     border-bottom: 1px solid #d9d9d9;
-    padding: 1em $gutter;
+    padding: 1em $gutter/2;
   }
 
   &__lower {
     overflow: hidden;
     background: #fafafa;
     border-top: 1px solid #fff;
-    padding: 2em $gutter;
+    padding: 2em $gutter/2;
   }
 }
 
@@ -27,5 +27,13 @@
     display: inline-block;
     vertical-align: middle;
     margin-right: 2em;
+  }
+}
+
+@media (min-width: 35em) {
+  .c-main-footer__upper,
+  .c-main-footer__lower {
+    padding-left: $gutter;
+    padding-right: $gutter;
   }
 }
