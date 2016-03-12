@@ -36,10 +36,25 @@ h6 {
   }
 }
 
+.o-h3 {
+  @include font-size(30px);
+  margin-bottom: .5em;
+
+  p + &,
+  a + & {
+    margin-top: 1em;
+  }
+}
+
 .o-headline {
   display: block;
   font-family: $font-family-titles;
   @include font-size(24px);
   line-height: 1.2;
   margin: 0 0 1.5em;
+}
+
+.o-text-large {
+  @include font-size(21px);
+  margin: .75em 0;
 }

@@ -1,7 +1,18 @@
 .c-contact-info {
   background: $brand-primary;
   color: $white;
-  margin-bottom: 5.5em;
+  padding: $gutter $gutter/2;
+
+  @media (min-width: 35em) {
+    padding-left: $gutter;
+    padding-right: $gutter;
+  }
+
+  @media (min-width: 48em) {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 5.5em;
+  }
 
   a {
     font-weight: bold;
