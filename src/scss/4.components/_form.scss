@@ -34,10 +34,14 @@
 
 
   @media (min-width: 48em) {
-    .o-row:first-child {
-      .o-label {
-        margin-top: 0;
-      }
+    > .o-row:first-child .o-label {
+      margin-top: 0;
     }
+  }
+
+  &__link {
+    @include font-size(14px);
+    display: block;
+    margin-top: 2.5em;
   }
 }

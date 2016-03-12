@@ -47,3 +47,9 @@
     display: none;
   }
 }
+
+.u-hidden-lg {
+  @media (min-width: 60em) and (max-width: 70em) {
+    display: none;
+  }
+}

@@ -1,99 +1,73 @@
 <!--=include include/_header.html -->
 
-<main class="container">
-  <br/>
-  <div class="row">
-    <div class="col-md-3">
-      <h1 class="h2">Login</h1>
+<main id="main-content">
+  <h1 class="o-title">Login</h1>
+  <div class="c-main-content">
+    <div class="o-row__padder">
+      <div class="o-row o-row--fixed">
+        <div class="o-col o-col--3">
+          <form class="c-form u-clearfix">
+            <label class="o-label" for="exampleInputEmail1">Email</label>
+            <input type="email" class="o-input o-input--full" id="exampleInputEmail1" placeholder="Email">
 
-      <form>
-        <fieldset class="form-group">
-          <!-- <label for="exampleInputEmail1">Email</label> -->
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-          <!-- <small class="text-muted">We'll never share your email with anyone else.</small> -->
-        </fieldset>
-        <fieldset class="form-group">
-          <!-- <label for="exampleInputPassword1">Senha</label> -->
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-        </fieldset>
-        <button type="submit" class="btn btn-primary">Entrar</button>
-      </form>
+            <label class="o-label" for="exampleInputPassword1">Senha</label>
+            <input type="password" class="o-input o-input--full" id="exampleInputPassword1" placeholder="Senha">
 
-      <br/>
-      <a href="#">Esqueci minha senha</a>
-      <br/>
-      <br/>
+            <button type="submit" class="o-btn o-btn--primary u-pull-right">Entrar</button>
 
-    </div>
-    <div class="col-md-offset-1 col-md-5">
-      <h1 class="h2">Cadastro</h1>
-      <form action="">
-        <div class="form-group row">
-          <label for="inputEmail3" class="col-sm-2 form-control-label">Nome</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputEmail3" placeholder="">
-          </div>
+            <a href="#" class="c-form__link">Esqueci minha senha</a>
+          </form>
         </div>
-        <div class="form-group row">
-          <label for="inputEmail3" class="col-sm-2 form-control-label">Email</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="">
-          </div>
+        <div class="o-col o-col--1 c-spacer__parent">
+          <span class="c-spacer"></span>
         </div>
-        <div class="form-group row">
-          <label for="inputPassword3" class="col-sm-2 form-control-label">Senha</label>
-          <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword3" placeholder="">
-          </div>
-        </div>
+        <div class="o-col o-col--4">
+          <p class="o-headline">Não possui cadastro?<br/>
+             Faça seu cadastro abaixo.</p>
+          <form class="c-form" action="">
+            <label for="inputEmail3" class="o-label">Nome</label>
+            <input type="text" class="o-input o-input--full" id="inputEmail3">
 
-        <div class="form-group row">
-          <label for="inputEmail3" class="col-sm-2 form-control-label">CEP</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputEmail3" placeholder="">
-          </div>
-        </div>
+            <label for="inputEmail3" class="o-label">Email</label>
+            <input type="email" class="o-input o-input--full" id="inputEmail3">
 
-        <div class="form-group row">
-          <label for="inputEmail3" class="col-sm-2 form-control-label">Endereço</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputEmail3" placeholder="">
-          </div>
-        </div>
+            <label for="inputPassword3" class="o-label">Senha</label>
+            <input type="password" class="o-input o-input--full" id="inputPassword3">
 
-        <div class="form-group row">
-          <label for="inputEmail3" class="col-sm-2 form-control-label">Cidade</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputEmail3" placeholder="">
-          </div>
-        </div>
+            <label for="inputEmail3" class="o-label">CEP</label>
+            <input type="text" class="o-input o-input--full" id="inputEmail3">
 
-        <div class="form-group row">
-          <label for="inputEmail3" class="col-sm-2 form-control-label">UF</label>
-          <div class="col-sm-10">
-            <select class="c-select" id="exampleSelect2">
-              <option selected="selected">RS</option>
-              <option>SC</option>
-              <option>SP</option>
-              <option>RJ</option>
-              <option>RN</option>
-            </select>
-          </div>
-        </div>
+            <label for="inputEmail3" class="o-label">Endereço</label>
+            <input type="text" class="o-input o-input--full" id="inputEmail3">
 
-        <div class="form-group row">
-          <label for="inputEmail3" class="col-sm-2 form-control-label">Telefone</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputEmail3" placeholder="">
-          </div>
-        </div>
+            <div class="o-row__padder">
+              <div class="o-row">
+                <div class="o-col">
+                  <label for="inputEmail3" class="o-label">Cidade</label>
+                  <input type="text" class="o-input o-input--full"
+                    id="inputEmail3">
+                </div>
+                <div class="o-col o-col--3">
+                  <label for="inputEmail3" class="o-label">UF</label>
+                  <select class="o-input o-input--full" id="exampleSelect2">
+                    <option selected="selected">RS</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                  </select>
+                </div>
+              </div>
+            </div>
 
-        <div class="form-group row">
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-primary">Cadastrar</button>
-          </div>
+            <label for="inputEmail3" class="o-label">Telefone</label>
+            <input type="text" class="o-input o-input--full" id="inputEmail3">
+
+            <button type="submit" class="o-btn o-btn--primary">Cadastrar</button>
+          </form>
         </div>
-      </form>
+        <div class="o-col o-col--4 u-hidden-md u-hidden-lg"></div>
+      </div>
     </div>
   </div>
 </main>

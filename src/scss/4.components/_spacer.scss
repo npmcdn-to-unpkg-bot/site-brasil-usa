@@ -1,0 +1,19 @@
+.c-spacer__parent {
+  position: relative;
+
+  @media (max-width: 47.99em) {
+    padding: 2em 0;
+  }
+}
+
+.c-spacer {
+  display: block;
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  border-left: 1px solid #eee;
+
+  @media (max-width: 47.99em) {
+    display: none;
+  }
+}
