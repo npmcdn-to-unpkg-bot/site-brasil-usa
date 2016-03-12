@@ -11,11 +11,28 @@
   }
 
   &__content {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    right: 0;
+    padding: 2.5em 2em 1em;
+
+    @media (min-width: 48em) {
+      padding: 0;
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+    }
+  }
+
+
+  @media (max-width: 47.99em) {
+    &__image {
+      display: none;
+    }
+
+    .o-btn {
+      color: $text-color;
+      background: $white;
+    }
   }
 }

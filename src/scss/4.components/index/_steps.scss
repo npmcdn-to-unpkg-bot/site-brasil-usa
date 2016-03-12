@@ -67,7 +67,6 @@
   }
 
   .c-steps__text {
-    @include font-size(20px);
     display: block;
   }
 }
@@ -84,4 +83,31 @@
   .c-steps__number {
     margin-bottom: .25em;
   }
+}
+
+@media (min-width: 65em) {
+  .c-steps__text {
+    @include font-size(20px);
+  }
+}
+
+
+.c-steps--secondary {
+  .c-steps__item {
+    & + & {
+      border-top: 1px solid darken($brand-dark, 10%);
+    }
+  }
+
+  @media (min-width: 48em) {
+    border-right: 1px solid darken($brand-dark, 10%);
+
+    .c-steps__item {
+      border-left: 1px solid darken($brand-dark, 10%);
+    }
+  }
+}
+
+.c-steps__wrapper--secondary {
+  background: $brand-dark;
 }

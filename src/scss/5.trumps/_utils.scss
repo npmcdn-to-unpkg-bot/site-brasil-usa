@@ -29,3 +29,21 @@
 .u-pull-right {
   float: right;
 }
+
+.u-hidden-xs {
+  @media (max-width: 39.99em) {
+    display: none;
+  }
+}
+
+.u-hidden-sm {
+  @media (min-width: 40em) and (max-width: 47.99em) {
+    display: none;
+  }
+}
+
+.u-hidden-md {
+  @media (min-width: 48em) and (max-width: 59.99em) {
+    display: none;
+  }
+}
