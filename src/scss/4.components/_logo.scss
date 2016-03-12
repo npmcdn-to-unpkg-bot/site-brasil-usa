@@ -2,6 +2,10 @@
   display: block;
   float: left;
 
+  @media(min-width: 60em) and (max-width: 64.99em) {
+    margin-top: 1em;
+  }
+
   @media (max-width: 64.99em) {
     max-width: 180px;
   }
