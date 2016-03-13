@@ -7,11 +7,13 @@
       <div class="o-row o-row--fixed">
         <div class="o-col o-col--3">
           <form class="c-form u-clearfix">
-            <label class="o-label" for="exampleInputEmail1">Email</label>
-            <input type="email" class="o-input o-input--full" id="exampleInputEmail1" placeholder="Email">
+            <label class="o-label" for="login-email">Email</label>
+            <input type="email" name="email" class="o-input o-input--full"
+              id="login-email" placeholder="Email" required>
 
-            <label class="o-label" for="exampleInputPassword1">Senha</label>
-            <input type="password" class="o-input o-input--full" id="exampleInputPassword1" placeholder="Senha">
+            <label class="o-label" for="login-password">Senha</label>
+            <input type="password" name="password" class="o-input o-input--full"
+              id="login-password" placeholder="Senha" required>
 
             <button type="submit" class="o-btn o-btn--primary u-pull-right">Entrar</button>
 
@@ -25,31 +27,36 @@
           <p class="o-headline">Não possui cadastro?<br/>
              Faça seu cadastro abaixo.</p>
           <form class="c-form" action="">
-            <label for="inputEmail3" class="o-label">Nome</label>
-            <input type="text" class="o-input o-input--full" id="inputEmail3">
+            <label for="name" class="o-label">Nome</label>
+            <input type="text" class="o-input o-input--full" id="name"
+              name="name" required>
 
-            <label for="inputEmail3" class="o-label">Email</label>
-            <input type="email" class="o-input o-input--full" id="inputEmail3">
+            <label for="email" class="o-label">Email</label>
+            <input type="email" class="o-input o-input--full" id="email"
+              name="email" required>
 
-            <label for="inputPassword3" class="o-label">Senha</label>
-            <input type="password" class="o-input o-input--full" id="inputPassword3">
+            <label for="password" class="o-label">Senha</label>
+            <input type="password" class="o-input o-input--full" id="password"
+              name="password" required>
 
-            <label for="inputEmail3" class="o-label">CEP</label>
-            <input type="text" class="o-input o-input--full" id="inputEmail3">
+            <label for="zip" class="o-label">CEP</label>
+            <input type="text" class="o-input o-input--full" id="zip"
+              name="zip" required>
 
-            <label for="inputEmail3" class="o-label">Endereço</label>
-            <input type="text" class="o-input o-input--full" id="inputEmail3">
+            <label for="address" class="o-label">Endereço</label>
+            <input type="text" class="o-input o-input--full" id="address"
+              name="address" required>
 
             <div class="o-row__padder">
               <div class="o-row">
                 <div class="o-col">
-                  <label for="inputEmail3" class="o-label">Cidade</label>
-                  <input type="text" class="o-input o-input--full"
-                    id="inputEmail3">
+                  <label for="city" class="o-label">Cidade</label>
+                  <input type="text" class="o-input o-input--full" name="city"
+                    id="city" required>
                 </div>
                 <div class="o-col o-col--3">
-                  <label for="inputEmail3" class="o-label">UF</label>
-                  <select class="o-input o-input--full" id="exampleSelect2">
+                  <label for="uf" class="o-label">UF</label>
+                  <select class="o-input o-input--full" id="uf" name="uf" required>
                     <option selected="selected">RS</option>
                     <option>SC</option>
                     <option>SP</option>
@@ -60,8 +67,9 @@
               </div>
             </div>
 
-            <label for="inputEmail3" class="o-label">Telefone</label>
-            <input type="text" class="o-input o-input--full" id="inputEmail3">
+            <label for="phone" class="o-label">Telefone</label>
+            <input type="tel" class="o-input o-input--full" id="phone"
+              name="phone" required>
 
             <button type="submit" class="o-btn o-btn--primary">Cadastrar</button>
           </form>

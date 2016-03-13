@@ -10,29 +10,29 @@
       <div class="o-row__padder">
         <div class="o-row">
           <div class="o-col">
-            <label class="o-label" for="">Nome</label>
-            <input type="text" name="name" class="o-input o-input--full">
+            <label class="o-label" for="name">Nome</label>
+            <input type="text" name="name" id="name" class="o-input o-input--full" required>
           </div>
           <div class="o-col">
-            <label class="o-label" for="">Email</label>
-            <input type="email" name="email" class="o-input o-input--full">
+            <label class="o-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="o-input o-input--full" required>
           </div>
         </div>
         <div class="o-row">
           <div class="o-col">
-            <label class="o-label" for="">Telefone</label>
-            <input type="text" name="phone" class="o-input o-input--full">
+            <label class="o-label" for="phone">Telefone</label>
+            <input type="tel" name="phone" id="phone" class="o-input o-input--full" required>
           </div>
           <div class="o-col">
-            <label class="o-label" for="exampleInputFile">Currículo</label>
-            <input type="file" class="o-input o-input--full" id="exampleInputFile">
+            <label class="o-label" for="resume">Currículo</label>
+            <input type="file" class="o-input o-input--full" id="resume" name="resume" required>
             <p class="c-form__hint">Envie arquivos em formato .PDF de até 2MB.</p>
           </div>
         </div>
       </div>
 
-      <label class="o-label" for="exampleTextarea">Mensagem</label>
-      <textarea class="o-input o-input--full" id="exampleTextarea" rows="3"></textarea>
+      <label class="o-label" for="message">Mensagem</label>
+      <textarea class="o-input o-input--full" id="message" name="message"></textarea>
 
       <button class="o-btn o-btn--primary u-pull-right" type="submit">Enviar</button>
     </form>

@@ -5,19 +5,19 @@
       <p class="o-headline u-text-center">Dúvida? Reclamação? Sugestão? Elogio?<br/> Mande para nós através
   do formulário abaixo.</p>
 
-      <form action="" class="c-form c-contact-form">
-        <label class="o-label" for="">Nome</label>
-        <input type="text" class="o-input o-input--full">
+      <form action="" method="post" class="c-form c-contact-form">
+        <label class="o-label" for="name">Nome</label>
+        <input type="text" name="name" id="name" class="o-input o-input--full">
 
-        <label class="o-label" for="">Email</label>
-        <input type="email" class="o-input o-input--full">
+        <label class="o-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="o-input o-input--full" required>
 
-        <label class="o-label" for="">Telefone</label>
-        <input type="text" class="o-input o-input--full">
+        <label class="o-label" for="phone">Telefone</label>
+        <input type="tel" name="phone" id="phone" class="o-input o-input--full">
 
-        <label class="o-label" for="exampleTextarea">Mensagem</label>
-        <textarea class="o-input o-input--full"
-         id="exampleTextarea" rows="3"></textarea>
+        <label class="o-label" for="message">Mensagem</label>
+        <textarea class="o-input o-input--full" id="message"
+         name="message" rows="3" required></textarea>
 
         <button class="o-btn o-btn--primary o-btn--full" type="submit">Enviar</button>
       </form>
