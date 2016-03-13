@@ -1,0 +1,9 @@
+.o-checkbox {
+  @include font-size(14px);
+  margin-top: .5em;
+  display: inline-block;
+
+  input {
+    margin-right: .5em;
+  }
+}

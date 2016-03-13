@@ -38,6 +38,16 @@ function toggleClass(el, className) {
 
 // For use with nodelist (returned by queryselector)
 function forEach(array, callback, scope) {
+
+  if (array.length < 1) { // if the array is empty, why bother?
+    return;
+  }
+
+  if (!array.length) { // if the query is actually an id...
+    callback.call(scope, 0, array);
+    return;
+  }
+
   for (var i = 0; i < array.length; i++) {
     callback.call(scope, i, array[i]); // passes back stuff we need
   }
@@ -58,7 +68,7 @@ $('#open-menu').addEventListener('click', function toggleMenu() {
 /******************************************************************************/
 var $questions = $('.js-question-open');
 
-forEach($questions,function(i, $question) {
+forEach($questions, function(i, $question) {
   $question.addEventListener('click', function toggleMenu() {
     toggleClass(this, 'is-open');
   });
@@ -86,12 +96,14 @@ var $toggler = $('.js-toggle');
 forEach($toggler, function(i, $toggler) {
   $toggler.addEventListener('change', function() {
     var target = $toggler.getAttribute('data-target'),
-        $target = $(target);
+        $targets = $(target);
 
-        $target.disabled ? $target.disabled = false : $target.disabled = true;
-        if ($target.value !== '') {
-          $target.value = '';
-        }
+    forEach($targets, function(i, $target) {
+      $target.disabled ? $target.disabled = false : $target.disabled = true;
+      if ($target.value !== '') {
+        $target.value = '';
+      }
+    });
   });
 });
 
