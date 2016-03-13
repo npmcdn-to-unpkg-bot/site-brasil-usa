@@ -53,10 +53,11 @@
   }
 
   .c-main-nav__link {
-    padding-bottom: 2.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
   }
 
-  .c-main-nav__item:first-child .c-main-nav__link {
+  .c-main-nav__item:last-child {
     padding-top: 1.5em;
   }
 }
