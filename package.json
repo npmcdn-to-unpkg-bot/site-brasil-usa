@@ -24,7 +24,8 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.2",
     "normalize.css": "^3.0.3",
-    "postcss-import": "^8.0.2"
+    "postcss-import": "^8.0.2",
+    "vanilla-masker": "^1.0.9"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",

@@ -15,6 +15,7 @@ gulp.task('eslint', function() {
 
 gulp.task('javascript', ['eslint'], function() {
   return gulp.src([
+      './node_modules/vanilla-masker/build/vanilla-masker.min.js',
       './node_modules/fastclick/lib/fastclick.js',
       './src/js/main.js'
     ])

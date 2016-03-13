@@ -64,6 +64,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 /******************************************************************************/
+/* INPUT MASKS */
+/******************************************************************************/
+VMasker($('.js-input-date')).maskPattern('99/99/9999');
+VMasker($('.js-input-time')).maskPattern('99:99');
+VMasker($('.js-input-phone')).maskPattern("(99) 99999-9999");
+VMasker($('.js-input-zip')).maskPattern("99999-999");
+
+
+/******************************************************************************/
 /* MENU */
 /******************************************************************************/
 $('#open-menu').addEventListener('click', function toggleMenu() {
