@@ -30,6 +30,10 @@
   float: right;
 }
 
+.u-hidden {
+  display: none;
+}
+
 .u-hidden-xs {
   @media (max-width: 39.99em) {
     display: none;

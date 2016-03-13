@@ -6,10 +6,6 @@
 
 document.documentElement.className += ' js';
 
-// $('.js-toggle-form').on('change', function() {
-//   $('.js-togglable-form').toggleClass('sr-only');
-// });
-
 /******************************************************************************/
 /* MINI JQUERY */
 /******************************************************************************/
@@ -67,5 +63,21 @@ forEach($questions,function(i, $question) {
     toggleClass(this, 'is-open');
   });
 });
+
+
+/******************************************************************************/
+/* PEDIDO */
+/******************************************************************************/
+var $formToggle = $('.js-toggle-form'),
+    $togglableForm = $('.js-togglable-form');
+
+forEach($formToggle, function(i, $toggler) {
+  $toggler.addEventListener('change', function toggleForm() {
+    forEach($togglableForm, function(i, $form) {
+      toggleClass($form, 'u-hidden');
+    });
+  });
+});
+
 
 })();
