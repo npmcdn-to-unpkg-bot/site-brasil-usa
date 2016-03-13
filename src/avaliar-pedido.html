@@ -1,77 +1,91 @@
 <!--=include include/_header.html -->
 
-<main class="container">
-    <h1 class="display-1">Avaliar pedido</h1>
-    <div class="row">
-        <div class="col-md-6">
-            <p>Você está avaliando seu pedido de nº <strong>123130</strong>.
-            Veja as informações do pedido ao lado e nos diga se sua experiência foi
-            positiva ou negativa e por quê.</p>
-            <p>Você também pode enviar um vídeo do
-            Youtube mostrando o unboxing do produto ou um review do serviço.</p>
+<main id="main-content">
+    <h1 class="o-title">Avaliar pedido</h1>
+    <div class="c-main-content c-main-content--fixed">
+      <div class="o-row__padder"><div class="o-row">
+          <div class="o-col">
+              <p class="o-headline">Você está avaliando seu pedido de nº <strong>123130</strong>.<br/>
+              Veja as informações do pedido ao lado e nos diga se sua experiência foi
+              positiva ou negativa e por quê.</p>
+              <p>Você também pode enviar um vídeo do
+              Youtube mostrando o unboxing do produto ou um review do serviço.</p>
 
-            <h2>Avaliação do pedido</h2>
-            <form action="">
-                <div class="card card-block">
-                    <p>Como foi sua experiência?</p>
-                    <label class="c-input c-radio">
-                      <input id="radio1" name="radio" type="radio" checked>
-                      <span class="c-indicator"></span>
-                      Positiva
-                    </label>
-                    <label class="c-input c-radio">
-                      <input id="radio2" name="radio" type="radio">
-                      <span class="c-indicator"></span>
-                      Negativa
-                    </label>
-                </div>
+              <h2 class="o-h3">Avaliação do pedido</h2>
+              <form action="" class="c-form u-clearfix">
+                  <div class="c-block c-toggle-box">
+                    <p class="c-block__title">Como foi sua experiência?</p>
+                    <div class="o-row__padder">
+                      <div class="o-row">
+                        <div class="o-col">
+                          <input id="review-positive" name="review-status"
+                            value="positive" type="radio" checked class="c-toggle-box__input">
+                          <label class="o-btn o-btn--primary o-btn--full c-toggle-box__btn"
+                            for="review-positive">
 
-                <fieldset class="form-group">
-                  <label for="exampleTextarea">Por que?</label>
-                  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-                </fieldset>
+                            <svg class="c-toggle-box__icon" xmlns="http://www.w3.org/2000/svg" width="18.156" height="13.938" viewBox="0 0 18.156 13.938"><path d="M18.164 2.73a1.136 1.136 0 0 0-.328-.8L16.242.338a1.13 1.13 0 0 0-1.593 0l-7.69 7.7L3.517 4.58a1.132 1.132 0 0 0-1.594 0L.328 6.174a1.132 1.132 0 0 0 0 1.594L4.57 12.01l1.594 1.594a1.132 1.132 0 0 0 1.594 0l1.594-1.594 8.484-8.484a1.136 1.136 0 0 0 .328-.795z"/></svg>&nbsp;
 
-                <fieldset class="form-group">
-                    <label for="">Endereço do vídeo <small>(do Youtube)</small></label>
-                    <input type="text" class="form-control">
-                </fieldset>
+                            Positiva</label>
+                        </div>
+                        <div class="o-col">
+                          <input id="review-negative" name="review-status"
+                            value="negative" type="radio" class="c-toggle-box__input">
+                          <label class="o-btn o-btn--primary o-btn--full c-toggle-box__btn"
+                            for="review-negative">
 
-                <button class="btn btn-primary pull-right">Enviar avaliação</button>
-            </form>
-        </div>
+                            <svg class="c-toggle-box__icon" xmlns="http://www.w3.org/2000/svg" width="13.907" height="13.938" viewBox="0 0 13.907 13.938"><path d="M13.918 11.215a1.136 1.136 0 0 0-.328-.8L10.145 6.97l3.445-3.445a1.132 1.132 0 0 0 0-1.594L11.996.338a1.13 1.13 0 0 0-1.593 0L6.957 3.782 3.512.337a1.132 1.132 0 0 0-1.594 0L.324 1.93a1.132 1.132 0 0 0 0 1.595L3.77 6.97.324 10.415a1.132 1.132 0 0 0 0 1.594l1.594 1.593a1.132 1.132 0 0 0 1.594 0l3.445-3.446 3.446 3.446a1.13 1.13 0 0 0 1.593 0l1.594-1.594a1.136 1.136 0 0 0 .328-.795z"/></svg>&nbsp;
 
-        <div class="col-md-offset-1 col-md-5">
-            <h2>Informações do pedido</h2>
+                            Negativa</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-            <!-- PRODUTO: -->
-            <div class="card">
-                <img class="card-img-top" src="http://placehold.it/480x220" alt="Card image cap">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><strong>Nome do produto:</strong> Cras justo odio</li>
-                    <li class="list-group-item"><strong>Marca:</strong> Dapibus ac facilisis in</li>
-                    <li class="list-group-item"><strong>Modelo:</strong> Vestibulum at eros</li>
-                    <li class="list-group-item"><strong>Descrição do produto:</strong>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    A, nobis quo velit minima! Debitis at odit sunt, nisi
-                    facere quos, ad eos cupiditate voluptatum nulla rerum
-                    quis sed tempora aperiam!</li>
+                  <label class="o-label" for="review-text">Por que?</label>
+                  <textarea class="o-input o-input--full" id="review-text"
+                    name="review-text"></textarea>
+
+                  <label class="o-label" for="video">Endereço do vídeo
+                      <small>(do Youtube)</small></label>
+                  <input type="url" class="o-input o-input--full" id="video" name="video">
+
+                  <button type="submit" class="o-btn o-btn--primary
+                    u-pull-right">Enviar avaliação</button>
+              </form>
+          </div>
+
+          <div class="o-col o-col--5">
+              <h2 class="o-h3">Informações do pedido</h2>
+
+              <!-- PRODUTO: -->
+              <div class="c-block c-block--secondary c-block--thin">
+                  <img class="c-block__image" src="http://placehold.it/480x220" alt="Card image cap">
+                  <ul class="c-block__list">
+                      <li class="c-block__item"><strong>Nome do produto:</strong> Cras justo odio</li>
+                      <li class="c-block__item"><strong>Marca:</strong> Dapibus ac facilisis in</li>
+                      <li class="c-block__item"><strong>Modelo:</strong> Vestibulum at eros</li>
+                      <li class="c-block__item"><strong>Descrição do produto:</strong>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      A, nobis quo velit minima! Debitis at odit sunt, nisi
+                      facere quos, ad eos cupiditate voluptatum nulla rerum
+                      quis sed tempora aperiam!</li>
                   </ul>
-            </div>
+              </div>
 
-            <!-- SERVIÇO: -->
-<!--
-            <div class="card">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><strong>Período:</strong> 12/11/2015, das 18:00 às 23:00</li>
-                    <li class="list-group-item"><strong>Local:</strong> Vestibulum at eros</li>
-                    <li class="list-group-item"><strong>Descrição do serviço:</strong>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    A, nobis quo velit minima! Debitis at odit sunt, nisi
-                    facere quos, ad eos cupiditate voluptatum nulla rerum
-                    quis sed tempora aperiam!</li>
-                  </ul>
-            </div> -->
-        </div>
+              <!-- SERVIÇO: -->
+              <!-- <div class="c-block c-block--secondary c-block--thin">
+                  <ul class="c-block__list">
+                      <li class="c-block__item"><strong>Período:</strong> 12/11/2015, das 18:00 às 23:00</li>
+                      <li class="c-block__item"><strong>Local:</strong> Vestibulum at eros</li>
+                      <li class="c-block__item"><strong>Descrição do serviço:</strong>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      A, nobis quo velit minima! Debitis at odit sunt, nisi
+                      facere quos, ad eos cupiditate voluptatum nulla rerum
+                      quis sed tempora aperiam!</li>
+                    </ul>
+              </div> -->
+          </div>
+      </div></div>
     </div>
 </main>
 

@@ -10,10 +10,21 @@
     @include font-size(21px);
     margin: .25em 0;
   }
+
+  &__icon {
+    fill: #fff;
+    fill-rule: evenodd;
+    opacity: 0;
+  }
 }
 
 .c-toggle-box__input:checked + .c-toggle-box__btn {
   box-shadow: none;
   transform: translate(0);
   background-color: $brand-dark;
+
+  .c-toggle-box__icon {
+    opacity: 1;
+    animation: fade-in .3s;
+  }
 }
