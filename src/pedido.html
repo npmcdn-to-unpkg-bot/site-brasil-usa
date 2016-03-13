@@ -1,125 +1,113 @@
 <!--=include include/_header.html -->
 
-<main class="container">
-  <h1 class="display-1">Faça seu pedido</h1>
+<main id="main-content">
+  <h1 class="o-title">Faça seu pedido</h1>
+  <div class="c-main-content">
+    <p class="o-headline">É fácil fazer seu pedido no Portal Brasil USA.<br/> Precisamos
+    apenas de algumas informações.</p>
 
-  <div class="row">
-    <div class="col-md-8">
-      <p class="lead">É fácil fazer seu pedido no Portal Brasil USA.<br/> Precisamos
-      apenas de algumas informações.</p>
+    <div class="o-row__padder"><div class="o-row">
+      <div class="o-col">
+        <div class="c-block c-toggle-box">
+          <div class="o-row__padder">
+            <div class="o-row">
+              <div class="o-col">
+                <input class="c-toggle-box__input js-toggle-form" id="radio1" name="radio" type="radio" checked>
+                <label class="o-btn o-btn--primary o-btn--full c-toggle-box__btn" for="radio1">Produto</label>
+              </div>
+              <div class="o-col o-col--2">
+                <p class="c-toggle-box__text">ou</p>
+              </div>
+              <div class="o-col">
+                <input class="c-toggle-box__input js-toggle-form" id="radio2" name="radio" type="radio">
+                <label class="o-btn o-btn--primary o-btn--full c-toggle-box__btn" for="radio2">Serviço</label>
+              </div>
+            </div>
+          </div>
 
-      <div class="card card-block">
-        <p>Produto ou serviço?</p>
-        <label class="c-input c-radio">
-          <input class="js-toggle-form" id="radio1" name="radio" type="radio" checked>
-          <span class="c-indicator"></span>
-          Produto
-        </label>
-        <label class="c-input c-radio">
-          <input class="js-toggle-form" id="radio2" name="radio" type="radio">
-          <span class="c-indicator"></span>
-          Serviço
-        </label>
+
+
+        </div>
+
+        <form class="c-form u-clearfix js-togglable-form o-row__padder" id="product-form" action="">
+          <div class="o-row">
+            <div class="o-col">
+              <label for="" class="o-label">Nome do produto</label>
+              <input type="text" class="o-input o-input--full">
+            </div>
+            <div class="o-col">
+              <label for="" class="o-label">Marca</label>
+              <input type="text" class="o-input o-input--full">
+            </div>
+          </div>
+          <div class="o-row">
+            <div class="o-col">
+              <label for="" class="o-label">Modelo</label>
+              <input type="text" class="o-input o-input--full">
+            </div>
+            <div class="o-col">
+              <label for="" class="o-label">Imagem do produto</label>
+              <input type="file" class="o-input o-input--full" id="file">
+            </div>
+          </div>
+          <div class="o-row">
+            <div class="o-col">
+              <label class="o-label" for="exampleTextarea">Descrição do produto</label>
+              <textarea class="o-input o-input--full" id="exampleTextarea"></textarea>
+              <button class="o-btn o-btn--primary o-btn--lg u-pull-right" type="submit">Fazer Pedido</button>
+            </div>
+          </div>
+        </form>
+
+        <form class="c-form js-togglable-form u-hidden" action="" id="service-form">
+          <div class="o-row__padder">
+            <div class="o-row">
+              <div class="o-col">
+                  <label for="" class="o-label">Data de início</label>
+                  <input type="text" class="o-input o-input--full">
+
+                  <label class="">
+                    <input type="checkbox"> Apenas um dia
+                  </label>
+              </div>
+              <div class="o-col">
+                  <label for="" class="o-label">Data final</label>
+                  <input type="text" class="o-input o-input--full">
+              </div>
+              <div class="o-col">
+                  <label for="" class="o-label">Hora de início</label>
+                  <input type="text" class="o-input o-input--full">
+
+                  <label class="">
+                    <input type="checkbox"> O dia todo
+                  </label>
+              </div>
+              <div class="o-col">
+                  <label for="" class="o-label">Hora final</label>
+                  <input type="text" class="o-input o-input--full">
+              </div>
+            </div>
+          </div>
+
+          <label for="" class="o-label">Local</label>
+          <input type="text" class="o-input o-input--full">
+
+          <label for="exampleTextarea" class="o-label">Descrição do serviço</label>
+          <textarea class="o-input o-input--full" id="exampleTextarea" rows="3"></textarea>
+
+          <button class="o-btn o-btn--primary o-btn--lg u-pull-right" type="submit">Fazer Pedido</button>
+        </form>
+
       </div>
-
-      <form class="js-togglable-form" id="product-form" action="">
-        <div class="row">
-          <div class="col-md-6">
-            <fieldset class="form-group">
-              <label for="">Nome do produto</label>
-              <input type="text" class="form-control">
-            </fieldset>
-          </div>
-          <div class="col-md-6">
-            <fieldset class="form-group">
-              <label for="">Marca</label>
-              <input type="text" class="form-control">
-            </fieldset>
-          </div>
+      <div class="o-col o-col--4">
+        <div class="c-block">
+          <p class="c-block__text">Já fez seu pedido?<br/>
+          Acompanhe o andamento<br/> fazendo login abaixo!</p>
+          <a href="#" class="o-btn o-btn--primary">Acompanhar meu pedido</a>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <fieldset class="form-group">
-              <label for="">Modelo</label>
-              <input type="text" class="form-control">
-            </fieldset>
-          </div>
-          <div class="col-md-6">
-            <fieldset class="form-group">
-              <label for="">Imagem do produto</label>
-              <label class="file">
-                <input type="file" id="file">
-                <span class="file-custom"></span>
-              </label>
-            </fieldset>
-          </div>
-        </div>
-
-        <fieldset class="form-group">
-          <label for="exampleTextarea">Descrição do produto</label>
-          <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-        </fieldset>
-
-        <button class="btn btn-primary btn-lg pull-right" type="submit">Fazer Pedido</button>
-      </form>
-
-      <form class="js-togglable-form sr-only" action="" id="service-form">
-        <div class="card card-block">
-          <p>Período</p>
-          <div class="row">
-            <div class="col-md-4">
-              <fieldset class="form-group">
-                <label for="">Data</label>
-                <input type="text" class="form-control">
-              </fieldset>
-            </div>
-            <div class="col-md-4">
-              <fieldset class="form-group">
-                <label for="">Hora de início</label>
-                <input type="text" class="form-control">
-              </fieldset>
-            </div>
-            <div class="col-md-4">
-              <fieldset class="form-group">
-                <label for="">Hora final</label>
-                <input type="text" class="form-control">
-              </fieldset>
-            </div>
-          </div>
-
-          <label class="c-input c-checkbox">
-            <input type="checkbox">
-            <span class="c-indicator"></span>
-            O dia inteiro
-          </label>
-
-          <label class="c-input c-checkbox">
-            <input type="checkbox">
-            <span class="c-indicator"></span>
-            Mais de um dia
-          </label>
-        </div>
-
-        <fieldset class="form-group">
-          <label for="">Local</label>
-          <input type="text" class="form-control">
-        </fieldset>
-
-        <fieldset class="form-group">
-          <label for="exampleTextarea">Descrição do serviço</label>
-          <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-        </fieldset>
-
-        <button class="btn btn-primary btn-lg pull-right" type="submit">Fazer Pedido</button>
-      </form>
-
-    </div>
-    <div class="col-md-4">
-      <div class="card card-block">
-        <p>Já fez seu pedido? Acompanhe o andamento fazendo login abaixo!</p>
-        <a href="#" class="btn btn-primary">Acompanhar meu pedido</a>
       </div>
-    </div>
+    </div></div>
+  </div>
 </main>
 
 <!--=include include/_footer.html -->
