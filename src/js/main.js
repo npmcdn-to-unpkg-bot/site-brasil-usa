@@ -1,4 +1,5 @@
 /*eslint-disable no-console */
+/* global FastClick VMasker */
 
 'use strict';
 
@@ -52,6 +53,14 @@ function forEach(array, callback, scope) {
     callback.call(scope, i, array[i]); // passes back stuff we need
   }
 }
+
+
+/******************************************************************************/
+/* FASTCLICK */
+/******************************************************************************/
+document.addEventListener('DOMContentLoaded', function() {
+  FastClick.attach(document.body);
+}, false);
 
 
 /******************************************************************************/
