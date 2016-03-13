@@ -40,6 +40,13 @@ function toggleClass(el, className) {
   }
 }
 
+// For use with nodelist (returned by queryselector)
+function forEach(array, callback, scope) {
+  for (var i = 0; i < array.length; i++) {
+    callback.call(scope, i, array[i]); // passes back stuff we need
+  }
+}
+
 
 /******************************************************************************/
 /* MENU */
@@ -55,10 +62,10 @@ $('#open-menu').addEventListener('click', function toggleMenu() {
 /******************************************************************************/
 var $questions = $('.js-question-open');
 
-for (var i = 0; i < $questions.length; i++) {
-  $questions[i].addEventListener('click', function toggleMenu() {
+forEach($questions,function(i, $question) {
+  $question.addEventListener('click', function toggleMenu() {
     toggleClass(this, 'is-open');
   });
-}
+});
 
 })();
