@@ -50,6 +50,12 @@
   @media (min-width: 48em) and (max-width: 59.99em) {
     display: none;
   }
+
+  &--up {
+    @media (min-width: 48em) {
+      display: none;
+    }
+  }
 }
 
 .u-hidden-lg {

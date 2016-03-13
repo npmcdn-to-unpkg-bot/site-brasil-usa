@@ -30,44 +30,46 @@
           </div>
         </div>
 
-        <form class="c-form u-clearfix js-togglable-form o-row__padder"
+        <form class="c-form u-clearfix js-togglable-form"
           id="product-form" action="">
-          <div class="o-row">
-            <div class="o-col">
-              <label for="product-name" class="o-label">Nome do produto</label>
-              <input type="text" class="o-input o-input--full" id="product-name"
-                name="product-name" required>
+          <div class="o-row__padder">
+            <div class="o-row">
+              <div class="o-col">
+                <label for="product-name" class="o-label">Nome do produto</label>
+                <input type="text" class="o-input o-input--full" id="product-name"
+                  name="product-name" required>
+              </div>
+              <div class="o-col">
+                <label for="product-brand" class="o-label">Marca</label>
+                <input type="text" class="o-input o-input--full" id="product-brand"
+                  name="product-brand">
+              </div>
             </div>
-            <div class="o-col">
-              <label for="product-brand" class="o-label">Marca</label>
-              <input type="text" class="o-input o-input--full" id="product-brand"
-                name="product-brand">
+            <div class="o-row">
+              <div class="o-col">
+                <label for="product-model" class="o-label">Modelo</label>
+                <input type="text" class="o-input o-input--full" name="product-model"
+                  id="product-model">
+              </div>
+              <div class="o-col">
+                <label for="product-image" class="o-label">Imagem do produto</label>
+                <input type="file" class="o-input o-input--full" id="product-image"
+                  name="product-image" required>
+              </div>
             </div>
-          </div>
-          <div class="o-row">
-            <div class="o-col">
-              <label for="product-model" class="o-label">Modelo</label>
-              <input type="text" class="o-input o-input--full" name="product-model"
-                id="product-model">
-            </div>
-            <div class="o-col">
-              <label for="product-image" class="o-label">Imagem do produto</label>
-              <input type="file" class="o-input o-input--full" id="product-image"
-                name="product-image" required>
-            </div>
-          </div>
-          <div class="o-row">
-            <div class="o-col">
-              <label class="o-label" for="product-description">Descrição do produto</label>
-              <textarea class="o-input o-input--full" id="product-description"
-               name="product-description" required></textarea>
-              <button class="o-btn o-btn--primary o-btn--lg u-pull-right"
-                type="submit">Fazer Pedido</button>
+            <div class="o-row">
+              <div class="o-col">
+                <label class="o-label" for="product-description">Descrição do produto</label>
+                <textarea class="o-input o-input--full" id="product-description"
+                 name="product-description" required></textarea>
+                <button class="o-btn o-btn--primary o-btn--lg u-pull-right"
+                  type="submit">Fazer Pedido</button>
+              </div>
             </div>
           </div>
         </form>
 
-        <form class="c-form js-togglable-form u-hidden" action="" id="service-form">
+        <form class="c-form js-togglable-form u-clearfix u-hidden" action="" id="service-form">
           <div class="o-row__padder">
             <div class="o-row">
               <div class="o-col">
@@ -115,6 +117,7 @@
 
       </div>
       <div class="o-col o-col--4">
+        <br class="u-hidden-md--up" />
         <div class="c-block">
           <p class="c-block__text">Já fez seu pedido?<br/>
           Acompanhe o andamento<br/> fazendo login abaixo!</p>
