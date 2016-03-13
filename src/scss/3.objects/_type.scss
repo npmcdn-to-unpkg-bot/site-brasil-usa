@@ -6,6 +6,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: bold;
   font-family: $font-family-titles;
 }
 
@@ -48,6 +49,7 @@ h6 {
 
 .o-headline {
   display: block;
+  font-weight: bold;
   font-family: $font-family-titles;
   @include font-size(24px);
   line-height: 1.2;

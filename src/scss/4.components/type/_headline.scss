@@ -1,6 +1,7 @@
 .c-headline {
   margin: 0 0 .9em;
   color: $white;
+  font-weight: bold;
   font-family: $font-family-titles;
   line-height: 1.2;
   @include font-size(30px);
