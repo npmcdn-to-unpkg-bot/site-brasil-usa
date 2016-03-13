@@ -80,4 +80,20 @@ forEach($formToggle, function(i, $toggler) {
 });
 
 
+// INPUT TOGGLER
+var $toggler = $('.js-toggle');
+
+forEach($toggler, function(i, $toggler) {
+  $toggler.addEventListener('change', function() {
+    var target = $toggler.getAttribute('data-target'),
+        $target = $(target);
+
+        $target.disabled ? $target.disabled = false : $target.disabled = true;
+        if ($target.value !== '') {
+          $target.value = '';
+        }
+  });
+});
+
+
 })();

@@ -5,11 +5,16 @@
   padding: 0 10px;
   border-radius: 3px;
   border: 1px solid #ccc;
-  background: $white;
+  background-color: $white;
   box-shadow: inset 0 1px 0 rgba(0,0,0,.1);
 
   &--full {
     width: 100%;
+  }
+
+  &:disabled {
+    background-color: #fafafa;
+    box-shadow: none;
   }
 }
 

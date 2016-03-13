@@ -24,9 +24,6 @@
               </div>
             </div>
           </div>
-
-
-
         </div>
 
         <form class="c-form u-clearfix js-togglable-form o-row__padder" id="product-form" action="">
@@ -63,37 +60,38 @@
           <div class="o-row__padder">
             <div class="o-row">
               <div class="o-col">
-                  <label for="" class="o-label">Data de início</label>
-                  <input type="text" class="o-input o-input--full">
+                  <label for="start-date" class="o-label">Data de início</label>
+                  <input type="text" class="o-input o-input--full" id="start-date">
 
                   <label class="">
-                    <input type="checkbox"> Apenas um dia
+                    <input type="checkbox" class="js-toggle" data-target="#end-date"> Apenas um dia
                   </label>
               </div>
               <div class="o-col">
-                  <label for="" class="o-label">Data final</label>
-                  <input type="text" class="o-input o-input--full">
+                  <label for="end-date" class="o-label">Data final</label>
+                  <input type="text" class="o-input o-input--full" id="end-date">
               </div>
               <div class="o-col">
-                  <label for="" class="o-label">Hora de início</label>
-                  <input type="text" class="o-input o-input--full">
+                  <label for="start-time" class="o-label">Hora de início</label>
+                  <input type="text" class="o-input o-input--full" id="start-time">
 
                   <label class="">
-                    <input type="checkbox"> O dia todo
+                    <input type="checkbox" class="js-toggle" data-target="#end-time"> O dia todo
                   </label>
               </div>
               <div class="o-col">
-                  <label for="" class="o-label">Hora final</label>
-                  <input type="text" class="o-input o-input--full">
+                  <label for="end-time" class="o-label">Hora final</label>
+                  <input type="text" class="o-input o-input--full" id="end-time">
               </div>
             </div>
           </div>
 
-          <label for="" class="o-label">Local</label>
-          <input type="text" class="o-input o-input--full">
+          <label for="location" class="o-label">Local</label>
+          <input type="text" class="o-input o-input--full" name="location" id="location">
 
-          <label for="exampleTextarea" class="o-label">Descrição do serviço</label>
-          <textarea class="o-input o-input--full" id="exampleTextarea" rows="3"></textarea>
+          <label for="service-description" class="o-label">Descrição do serviço</label>
+          <textarea class="o-input o-input--full"
+            id="service-description" name="service-description"></textarea>
 
           <button class="o-btn o-btn--primary o-btn--lg u-pull-right" type="submit">Fazer Pedido</button>
         </form>
